@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container">
+    <h1  class="text-center">Bienvenido</h1>
+    <div class="row center-block item">
+        <div class="col-md-12">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a class="btn btn-primary" href="@Url.Action("Index","Factorial")" role="button">Calcular número factorial</a>
+                <a class="btn btn-primary" href="@Url.Action("Index","NumeroMayor")" role="button">Número mayor</a>
+                <a class="btn btn-primary" href="@Url.Action("Index","AreaTriangulo")" role="button">Área del triángulo</a>
+                <a class="btn btn-primary" href="@Url.Action("Index","Clientes")" role="button">Registro de clientes</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+    .divList {
+        width: 100px;
+        height: auto;
+        word-wrap: break-word;
+    }
+</style>
+
+<div class="container">
+    <h2>Número mayor</h2>
+
+    <div class="row">
+        <div class="col-md-12">
+            <form id="frmNumeroMayor">
+                <div class="form-group">
+
+                    <div class="col-md-3">
+                        <label>Número 1</label>
+                        <input type="text" id="txtNumber1" name="txtNumber1" class="form-control "  onchange="aceptarNumeros(this)">
+                    </div>
+                    <div class="col-md-3 ">
+                        <label>Número 2</label>
+                        <input type="text" id="txtNumber2" name="txtNumber2" class="form-control "  onchange="aceptarNumeros(this)">
+                    </div>
+                    <div class="col-md-3">
+                        <label>Número 3 </label>
+                        <input type="text" id="txtNumber3" name="txtNumber3" class="form-control " onkeyup="aceptarNumeros(this)">
+                    </div>
+                    <br />
+                    <div class="col-md-3 ">
+                        <button onclick="$('#frmNumeroMayor').submit()" type="button" class="btn btn-success">Calcular</button>
+                        <button onclick="limpiar()" type="button" class="btn btn-danger">Limpiar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br />
+    <div class="row no-gutters" id="list">
+
+    </div>
+ 
+</div>
+
+@section scripts {
+    <script src="~/ViewScripts/Factorial/Index.js"></script>
+}
